@@ -25,15 +25,34 @@ export default function SpiritsPanel({ lang }: SpiritsPanelProps) {
             <Typography variant="h6">{category.name[lang]}</Typography>
           </AccordionSummary>
           <AccordionDetails sx={{ p: 0 }}>
+            {/* Cabecera de columnas para Copa y Cachi */}
+            <Box sx={{ px: 2, py: 1, display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+              <Typography variant="caption" color="text.secondary" sx={{ fontWeight: 'bold' }}>
+                {lang === 'es' ? 'Marca' : 'Brand'}
+              </Typography>
+              <Box sx={{ display: 'flex', gap: 2, textAlign: 'right' }}>
+                <Box sx={{ width: '55px' }}>
+                  <Typography variant="caption" color="text.secondary" sx={{ fontWeight: 'bold' }}>
+                    {uiTexts.copaHeader[lang]}
+                  </Typography>
+                </Box>
+                <Box sx={{ width: '55px' }}>
+                  <Typography variant="caption" sx={{ fontWeight: 'bold', color: 'secondary.main' }}>
+                    {uiTexts.cachiHeader[lang]}
+                  </Typography>
+                </Box>
+              </Box>
+            </Box>
+
             {category.items.map((item, itemIdx) => (
               <Box key={itemIdx}>
                 <Box sx={{ px: 2, py: 1.5, display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
                   <Typography variant="body1">{item.name}</Typography>
                   <Box sx={{ display: 'flex', gap: 2, textAlign: 'right' }}>
-                    <Box>
-                      <Typography variant="body1" fontWeight="medium">{item.priceCopa}€</Typography>
+                    <Box sx={{ width: '55px' }}>
+                      <Typography variant="body2" fontWeight="medium" color="text.secondary">{item.priceCopa}€</Typography>
                     </Box>
-                    <Box sx={{ width: '45px' }}>
+                    <Box sx={{ width: '55px' }}>
                       <Typography variant="body1" fontWeight="bold" color="secondary.main">{item.priceCachi}€</Typography>
                     </Box>
                   </Box>

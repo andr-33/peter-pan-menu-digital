@@ -14,7 +14,7 @@ export default function GenericPanel({ items, lang }: GenericPanelProps) {
           <Box key={idx}>
             <Box sx={{ px: 2, py: 2, display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
               <Typography variant="body1">{item.name[lang]}</Typography>
-              <Typography variant="h6" color="primary.light">{item.price}€</Typography>
+              {item.price && <Typography variant="body1" color="primary.light" fontWeight="bold">{item.price}€</Typography>}
             </Box>
             {idx < items.length - 1 && <Divider sx={{ opacity: 0.5 }} />}
           </Box>

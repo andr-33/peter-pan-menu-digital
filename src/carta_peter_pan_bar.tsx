@@ -1,12 +1,13 @@
 import React, { useState } from 'react';
-import { 
-  ThemeProvider, 
-  CssBaseline, 
-  Box, 
-  Tabs, 
-  Tab, 
+import {
+  ThemeProvider,
+  CssBaseline,
+  Box,
+  Tabs,
+  Tab,
   Container,
-  Chip
+  Chip,
+  Typography
 } from '@mui/material';
 import { Info } from 'lucide-react';
 
@@ -35,15 +36,15 @@ export default function PeterPanBarMenu() {
     <ThemeProvider theme={theme}>
       <CssBaseline />
       <Box sx={{ flexGrow: 1, height: '100vh', overflow: 'hidden', display: 'flex', flexDirection: 'column' }}>
-        
+
         {/* HEADER */}
         <Header lang={lang} onToggleLanguage={toggleLanguage} />
 
         {/* NAVEGACIÓN (TABS) */}
         <Box sx={{ borderBottom: 1, borderColor: 'divider', bgcolor: 'background.paper' }}>
-          <Tabs 
-            value={tabValue} 
-            onChange={handleTabChange} 
+          <Tabs
+            value={tabValue}
+            onChange={handleTabChange}
             variant="scrollable"
             scrollButtons="auto"
             allowScrollButtonsMobile
@@ -60,18 +61,20 @@ export default function PeterPanBarMenu() {
         {/* CONTENIDO DESLIZABLE (SCROLL) */}
         <Box sx={{ flexGrow: 1, overflowY: 'auto', bgcolor: 'background.default' }}>
           <Container maxWidth="sm" disableGutters>
-            
+
             {/* Banner de información de "Cachi" global */}
-            <Box sx={{ px: 2, pt: 2, pb: 0, display: 'flex', justifyContent: 'center' }}>
-              <Chip 
-                icon={<Info size={16} />} 
-                label={uiTexts.cachiInfo[lang]} 
-                color="secondary" 
-                variant="outlined" 
-                size="small" 
-                sx={{ mb: 1 }}
-              />
-            </Box>
+            {(tabValue === 0 || tabValue === 1) && (
+              <Box sx={{ px: 2, pt: 2, pb: 0, display: 'flex', justifyContent: 'center' }}>
+                <Chip
+                  icon={<Info size={16} />}
+                  label={uiTexts.cachiInfo[lang]}
+                  color="secondary"
+                  variant="outlined"
+                  size="small"
+                  sx={{ mb: 1, px: 1 }}
+                />
+              </Box>
+            )}
 
             {/* PANEL 1: NUESTROS CLÁSICOS */}
             <CustomTabPanel value={tabValue} index={0}>
@@ -90,12 +93,22 @@ export default function PeterPanBarMenu() {
 
             {/* PANEL 4: CHUPITOS */}
             <CustomTabPanel value={tabValue} index={3}>
+              <Box sx={{ mb: 2, p: 1.5, bgcolor: 'rgba(76, 175, 80, 0.1)', borderRadius: 2, borderLeft: '4px solid #4caf50', textAlign: 'center' }}>
+                <Typography variant="subtitle1" fontWeight="bold" color="text.primary">
+                  {lang === 'es' ? 'Todos nuestros chupitos a 2,50€' : 'All our shots at 2.50€'}
+                </Typography>
+              </Box>
               <GenericPanel items={menuData.chupitos} lang={lang} />
             </CustomTabPanel>
 
-            {/* PANEL 5: OTROS */}
+            {/* PANEL 5: VINOS */}
             <CustomTabPanel value={tabValue} index={4}>
-              <GenericPanel items={menuData.otros} lang={lang} />
+              <GenericPanel items={menuData.vinos} lang={lang} />
+            </CustomTabPanel>
+
+            {/* PANEL 6: BEBIDAS */}
+            <CustomTabPanel value={tabValue} index={5}>
+              <GenericPanel items={menuData.bebidas} lang={lang} />
             </CustomTabPanel>
 
           </Container>
