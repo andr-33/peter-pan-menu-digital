@@ -86,14 +86,14 @@ export default function PeterPanBarMenu() {
               <SpiritsPanel lang={lang} />
             </CustomTabPanel>
 
-            {/* PANEL 3: VINOS */}
+            {/* PANEL 3: CERVEZAS */}
             <CustomTabPanel value={tabValue} index={2}>
-              <GenericPanel items={menuData.vinos} lang={lang} />
+              <GenericPanel items={menuData.cervezas} lang={lang} />
             </CustomTabPanel>
 
-            {/* PANEL 4: CERVEZAS */}
+            {/* PANEL 4: VINOS */}
             <CustomTabPanel value={tabValue} index={3}>
-              <GenericPanel items={menuData.cervezas} lang={lang} />
+              <GenericPanel items={menuData.vinos} lang={lang} />
             </CustomTabPanel>
 
             {/* PANEL 5: CHUPITOS */}

@@ -9,12 +9,6 @@ interface SpiritsPanelProps {
 export default function SpiritsPanel({ lang }: SpiritsPanelProps) {
   return (
     <>
-      <Box sx={{ mb: 3, p: 1.5, bgcolor: 'rgba(76, 175, 80, 0.1)', borderRadius: 2, borderLeft: '4px solid #4caf50' }}>
-        <Typography variant="body2" color="text.primary">
-          {uiTexts.mixInfo[lang]}
-        </Typography>
-      </Box>
-
       {menuData.copas.map((category, idx) => (
         <Accordion key={idx}>
           <AccordionSummary
@@ -26,16 +20,15 @@ export default function SpiritsPanel({ lang }: SpiritsPanelProps) {
           </AccordionSummary>
           <AccordionDetails sx={{ p: 0 }}>
             {/* Cabecera de columnas para Copa y Cachi */}
-            <Box sx={{ px: 2, py: 1, display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
-              <Typography variant="caption" color="text.secondary" sx={{ fontWeight: 'bold' }}>
-                {lang === 'es' ? 'Marca' : 'Brand'}
-              </Typography>
+            <Box sx={{ px: 2, py: 0.25, display: 'flex', justifyContent: 'flex-end', alignItems: 'center' }}>
               <Box sx={{ display: 'flex', gap: 2, textAlign: 'right' }}>
+                {/* Copa/Glass price header hidden for now
                 <Box sx={{ width: '55px' }}>
                   <Typography variant="caption" color="text.secondary" sx={{ fontWeight: 'bold' }}>
                     {uiTexts.copaHeader[lang]}
                   </Typography>
                 </Box>
+                */}
                 <Box sx={{ width: '55px' }}>
                   <Typography variant="caption" sx={{ fontWeight: 'bold', color: 'secondary.main' }}>
                     {uiTexts.cachiHeader[lang]}
@@ -49,9 +42,11 @@ export default function SpiritsPanel({ lang }: SpiritsPanelProps) {
                 <Box sx={{ px: 2, py: 1.5, display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
                   <Typography variant="body1">{item.name}</Typography>
                   <Box sx={{ display: 'flex', gap: 2, textAlign: 'right' }}>
+                    {/* Copa/Glass price value hidden for now
                     <Box sx={{ width: '55px' }}>
                       <Typography variant="body2" fontWeight="medium" color="text.secondary">{item.priceCopa}€</Typography>
                     </Box>
+                    */}
                     <Box sx={{ width: '55px' }}>
                       <Typography variant="body1" fontWeight="bold" color="secondary.main">{item.priceCachi}€</Typography>
                     </Box>

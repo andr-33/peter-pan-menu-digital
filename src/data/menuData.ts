@@ -18,7 +18,7 @@ export interface ClassicItem {
 
 export interface SpiritItem {
   name: string;
-  priceCopa: string;
+  priceCopa?: string;
   priceCachi: string;
 }
 
@@ -46,9 +46,9 @@ export interface MenuData {
 export const menuData: MenuData = {
   categories: [
     { id: 'clasicos', label: { es: 'Nuestros Clásicos', en: 'Our Classics' } },
-    { id: 'copas', label: { es: 'Copas', en: 'Drinks' } },
-    { id: 'vinos', label: { es: 'Vinos', en: 'Wine' } },
+    { id: 'copas', label: { es: 'Chachis', en: 'Chachis' } },
     { id: 'cervezas', label: { es: 'Cervezas', en: 'Beers' } },
+    { id: 'vinos', label: { es: 'Vinos', en: 'Wine' } },
     { id: 'chupitos', label: { es: 'Chupitos', en: 'Shots' } },
     { id: 'refrescos', label: { es: 'Refrescos', en: 'Soft Drinks' } },
   ],
@@ -62,7 +62,7 @@ export const menuData: MenuData = {
     {
       id: 'c2',
       name: { es: 'Mágico', en: 'Magic' },
-      description: { es: 'Vino, Wisky, Licor de melocotón, Vermut blanco y rosado, azúcar y Kas naranja', en: 'Wine, Whisky, Peach liqueur, white and rose Vermouth, sugar and orange soda' },
+      description: { es: 'Vino, Wisky, Licor de melocotón, Vermut blanco y rojo, azúcar y Kas naranja', en: 'Wine, Whisky, Peach liqueur, white and red Vermouth, sugar and orange soda' },
       priceCachi: '7,5'
     },
     {
@@ -104,6 +104,19 @@ export const menuData: MenuData = {
     }
   ],
   copas: [
+    {
+      categoryId: 'con-vino',
+      name: { es: 'Con vino', en: 'With wine' },
+      items: [
+        { name: 'Calimocho', priceCopa: '3,5', priceCachi: '4,5' },
+        { name: 'Tinto de verano', priceCachi: '4,5' },
+        { name: 'Calimora', priceCachi: '4,8' },
+        { name: 'Calimocho (Rioja)', priceCachi: '5,7' },
+        { name: 'Rebujito', priceCachi: '5,7' },
+        { name: 'Sangria', priceCachi: '6' },
+        { name: 'Vino de Coco', priceCachi: '6,7' },
+      ]
+    },
     {
       categoryId: 'ron',
       name: { es: 'Rones', en: 'Rums' },
@@ -155,7 +168,13 @@ export const menuData: MenuData = {
         { name: 'Absolut', priceCopa: '6,50', priceCachi: '8,5' },
         { name: 'Eristoff', priceCopa: '6,50', priceCachi: '7,7' },
         { name: 'Vodka Negro', priceCopa: '6,50', priceCachi: '8,5' },
-
+      ]
+    },
+    {
+      categoryId: 'cerveza-chachi',
+      name: { es: 'Cerveza', en: 'Beer' },
+      items: [
+        { name: 'Estrella Galicia ', priceCopa: '3,50', priceCachi: '6,50' }
       ]
     }
   ],
@@ -167,7 +186,6 @@ export const menuData: MenuData = {
     { name: { es: 'Tercio Radler', en: 'Radler Bottle' }, price: '3' },
     { name: { es: 'Tercio 0,0 Tostada', en: '0,0 Tostada Bottle' }, price: '3' },
     { name: { es: 'Caña (0,5L)', en: 'Half-pint (0.5L)' }, price: '3,5' },
-    { name: { es: 'Cachi de Cerveza (1L)', en: 'Cachi Beer (1L)' }, price: '6,5' },
   ],
   chupitos: [
     { name: { es: 'Tequila José Cuervo', en: 'José Cuervo Tequila' } },
@@ -183,14 +201,6 @@ export const menuData: MenuData = {
   vinos: [
     { name: { es: 'Copa Rioja', en: 'Red Wine' }, price: '1,8' },
     { name: { es: 'Copa Rueda', en: 'White Wine' }, price: '1,8' },
-    { name: { es: 'Calimocho', en: 'Calimocho' }, price: '4,5' },
-    { name: { es: 'Calimora', en: 'Calimora' }, price: '4,8' },
-    { name: { es: 'Tinto de verano', en: 'Tinto de verano' }, price: '4,5' },
-    { name: { es: 'Calimocho (Rioja)', en: 'Calimocho (Rioja)' }, price: '5,7' },
-    { name: { es: 'Rebujito', en: 'Rebujito' }, price: '5,7' },
-    { name: { es: 'Sangria', en: 'Sangria' }, price: '6' },
-    { name: { es: 'Vino de Coco', en: 'Coconut Wine' }, price: '6,7' },
-
   ],
   refrescos: [
     { name: { es: 'Agua sin gas', en: 'Still water' }, price: '1,5' },
@@ -202,7 +212,7 @@ export const menuData: MenuData = {
     { name: { es: 'Tónica', en: 'Tonic' }, price: '2,7' },
     { name: { es: 'Sprite', en: 'Sprite' }, price: '2,7' },
     { name: { es: 'Nestea', en: 'Nestea' }, price: '2,7' },
-    { name: { es: 'Zumos de Piña', en: 'Pineapple juice' }, price: '2,7' },
+    { name: { es: 'Zumo de Piña', en: 'Pineapple juice' }, price: '2,7' },
     { name: { es: 'Mosto', en: 'Grape juice' }, price: '2,7' },
     { name: { es: 'Red Bull', en: 'Red Bull' }, price: '3' }
   ]
@@ -217,7 +227,7 @@ export const uiTexts = {
   },
   mixInfo: {
     es: 'Todas las copas incluyen tu mezcla favorita',
-    en: 'All spirits include your favorite mixer'
+    en: 'All drinks include your favorite mixer'
   },
   copaHeader: { es: 'Copa', en: 'Glass' },
   cachiHeader: { es: 'Cachi', en: 'Cachi' }
