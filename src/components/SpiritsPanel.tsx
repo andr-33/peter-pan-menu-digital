@@ -16,7 +16,7 @@ export default function SpiritsPanel({ lang }: SpiritsPanelProps) {
       </Box>
 
       {menuData.copas.map((category, idx) => (
-        <Accordion key={idx} defaultExpanded={idx === 0}>
+        <Accordion key={idx}>
           <AccordionSummary
             expandIcon={<ChevronDown color="#4caf50" />}
             aria-controls={`panel-${category.categoryId}-content`}

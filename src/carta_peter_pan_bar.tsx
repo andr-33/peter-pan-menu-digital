@@ -86,13 +86,18 @@ export default function PeterPanBarMenu() {
               <SpiritsPanel lang={lang} />
             </CustomTabPanel>
 
-            {/* PANEL 3: CERVEZAS */}
+            {/* PANEL 3: VINOS */}
             <CustomTabPanel value={tabValue} index={2}>
+              <GenericPanel items={menuData.vinos} lang={lang} />
+            </CustomTabPanel>
+
+            {/* PANEL 4: CERVEZAS */}
+            <CustomTabPanel value={tabValue} index={3}>
               <GenericPanel items={menuData.cervezas} lang={lang} />
             </CustomTabPanel>
 
-            {/* PANEL 4: CHUPITOS */}
-            <CustomTabPanel value={tabValue} index={3}>
+            {/* PANEL 5: CHUPITOS */}
+            <CustomTabPanel value={tabValue} index={4}>
               <Box sx={{ mb: 2, p: 1.5, bgcolor: 'rgba(76, 175, 80, 0.1)', borderRadius: 2, borderLeft: '4px solid #4caf50', textAlign: 'center' }}>
                 <Typography variant="subtitle1" fontWeight="bold" color="text.primary">
                   {lang === 'es' ? 'Todos nuestros chupitos a 2,50€' : 'All our shots at 2.50€'}
@@ -101,14 +106,9 @@ export default function PeterPanBarMenu() {
               <GenericPanel items={menuData.chupitos} lang={lang} />
             </CustomTabPanel>
 
-            {/* PANEL 5: VINOS */}
-            <CustomTabPanel value={tabValue} index={4}>
-              <GenericPanel items={menuData.vinos} lang={lang} />
-            </CustomTabPanel>
-
-            {/* PANEL 6: BEBIDAS */}
+            {/* PANEL 6: REFRESCOS */}
             <CustomTabPanel value={tabValue} index={5}>
-              <GenericPanel items={menuData.bebidas} lang={lang} />
+              <GenericPanel items={menuData.refrescos} lang={lang} />
             </CustomTabPanel>
 
           </Container>

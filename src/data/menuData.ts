@@ -40,17 +40,17 @@ export interface MenuData {
   cervezas: GenericItem[];
   chupitos: GenericItem[];
   vinos: GenericItem[];
-  bebidas: GenericItem[];
+  refrescos: GenericItem[];
 }
 
 export const menuData: MenuData = {
   categories: [
     { id: 'clasicos', label: { es: 'Nuestros Clásicos', en: 'Our Classics' } },
-    { id: 'copas', label: { es: 'Copas', en: 'Mixers' } },
+    { id: 'copas', label: { es: 'Copas', en: 'Drinks' } },
+    { id: 'vinos', label: { es: 'Vinos', en: 'Wine' } },
     { id: 'cervezas', label: { es: 'Cervezas', en: 'Beers' } },
     { id: 'chupitos', label: { es: 'Chupitos', en: 'Shots' } },
-    { id: 'vinos', label: { es: 'Vinos', en: 'Wine' } },
-    { id: 'bebidas', label: { es: 'Bebidas', en: 'Drinks' } },
+    { id: 'refrescos', label: { es: 'Refrescos', en: 'Soft Drinks' } },
   ],
   clasicos: [
     {
@@ -166,8 +166,8 @@ export const menuData: MenuData = {
     { name: { es: 'Tercio Voll Damm', en: 'Voll Damm Bottle' }, price: '3' },
     { name: { es: 'Tercio Radler', en: 'Radler Bottle' }, price: '3' },
     { name: { es: 'Tercio 0,0 Tostada', en: '0,0 Tostada Bottle' }, price: '3' },
-    { name: { es: 'Caña', en: 'Half-pint' }, price: '3,5' },
-    { name: { es: 'Cachi de Cerveza', en: 'Cachi Beer (1 Liter)' }, price: '6,5' },
+    { name: { es: 'Caña (0,5L)', en: 'Half-pint (0.5L)' }, price: '3,5' },
+    { name: { es: 'Cachi de Cerveza (1L)', en: 'Cachi Beer (1L)' }, price: '6,5' },
   ],
   chupitos: [
     { name: { es: 'Tequila José Cuervo', en: 'José Cuervo Tequila' } },
@@ -192,8 +192,8 @@ export const menuData: MenuData = {
     { name: { es: 'Vino de Coco', en: 'Coconut Wine' }, price: '6,7' },
 
   ],
-  bebidas: [
-    { name: { es: 'Agua sin gas', en: 'Still water' }, price: '1,8' },
+  refrescos: [
+    { name: { es: 'Agua sin gas', en: 'Still water' }, price: '1,5' },
     { name: { es: 'Agua con gas', en: 'Sparkling water' }, price: '2,7' },
     { name: { es: 'Coca-Cola', en: 'Coke' }, price: '2,7' },
     { name: { es: 'Coca-Cola Zero', en: 'Coke Zero' }, price: '2,7' },

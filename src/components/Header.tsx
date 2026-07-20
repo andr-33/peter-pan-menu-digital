@@ -1,5 +1,7 @@
 import { AppBar, Toolbar, Box, Typography, Button } from '@mui/material';
 import { uiTexts } from '../data/menuData';
+import IconFlagEN from './IconFlagEN';
+import IconFlagES from './IconFlagES';
 
 interface HeaderProps {
   lang: 'es' | 'en';
@@ -32,13 +34,13 @@ export default function Header({ lang, onToggleLanguage }: HeaderProps) {
           </Box>
         </Box>
         <Button
-          variant="contained"
+          variant="text"
           color="primary"
           size="small"
           onClick={onToggleLanguage}
-          sx={{ minWidth: '40px', borderRadius: '20px' }}
+          sx={{ minWidth: '45px', borderRadius: '20px' }}
         >
-          {lang === 'es' ? 'EN' : 'ES'}
+          {lang === 'es' ? <IconFlagEN /> : <IconFlagES />}
         </Button>
       </Toolbar>
     </AppBar>
