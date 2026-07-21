@@ -14,6 +14,7 @@ export interface ClassicItem {
   description: MultilingualString;
   priceCopa?: string;
   priceCachi: string;
+  image?: string;
 }
 
 export interface SpiritItem {
@@ -57,7 +58,8 @@ export const menuData: MenuData = {
       id: 'c1',
       name: { es: 'Peter Pan', en: 'Peter Pan' },
       description: { es: 'Licor de manzana y melocotón, Vodka, Granadina y Kas limón', en: 'Apple and peach liqueur, Vodka, Grenadine and lemon soda' },
-      priceCachi: '7,5'
+      priceCachi: '7,5',
+      image: '/cachis/peter-pan.jpg'
     },
     {
       id: 'c2',
@@ -69,7 +71,8 @@ export const menuData: MenuData = {
       id: 'c3',
       name: { es: 'Real Racing', en: 'Real Racing' },
       description: { es: 'Licor de manzana, Ginebra, Kiwi y 7Up', en: 'Apple liqueur, Gin, Kiwi and 7Up' },
-      priceCachi: '7,5'
+      priceCachi: '7,5',
+      image: '/cachis/real-racing.jpg'
     },
     {
       id: 'c4',

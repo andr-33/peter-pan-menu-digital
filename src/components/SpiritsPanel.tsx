@@ -1,10 +1,30 @@
 import { Box, Typography, Accordion, AccordionSummary, AccordionDetails, Divider } from '@mui/material';
-import { ChevronDown } from 'lucide-react';
+import { ChevronDown, Wine, Beer, Martini, GlassWater, Flame, Sparkles } from 'lucide-react';
 import { menuData, uiTexts } from '../data/menuData';
 
 interface SpiritsPanelProps {
   lang: 'es' | 'en';
 }
+
+const getCategoryIcon = (categoryId: string) => {
+  const iconProps = { size: 20, color: '#4caf50' };
+  switch (categoryId) {
+    case 'ron':
+      return <Flame {...iconProps} />;
+    case 'whisky':
+      return <GlassWater {...iconProps} />;
+    case 'ginebra':
+      return <Martini {...iconProps} />;
+    case 'vodka':
+      return <Sparkles {...iconProps} />;
+    case 'con-vino':
+      return <Wine {...iconProps} />;
+    case 'cerveza-chachi':
+      return <Beer {...iconProps} />;
+    default:
+      return null;
+  }
+};
 
 export default function SpiritsPanel({ lang }: SpiritsPanelProps) {
   return (
@@ -16,7 +36,10 @@ export default function SpiritsPanel({ lang }: SpiritsPanelProps) {
             aria-controls={`panel-${category.categoryId}-content`}
             id={`panel-${category.categoryId}-header`}
           >
-            <Typography variant="h6">{category.name[lang]}</Typography>
+            <Box sx={{ display: 'flex', alignItems: 'center', gap: 1.5 }}>
+              {getCategoryIcon(category.categoryId)}
+              <Typography variant="h6">{category.name[lang]}</Typography>
+            </Box>
           </AccordionSummary>
           <AccordionDetails sx={{ p: 0 }}>
             {/* Cabecera de columnas para Copa y Cachi */}
