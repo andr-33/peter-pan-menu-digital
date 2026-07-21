@@ -46,7 +46,7 @@ export interface MenuData {
 export const menuData: MenuData = {
   categories: [
     { id: 'clasicos', label: { es: 'Nuestros Clásicos', en: 'Our Classics' } },
-    { id: 'copas', label: { es: 'Chachis', en: 'Chachis' } },
+    { id: 'copas', label: { es: 'Cachis', en: 'Cachis' } },
     { id: 'cervezas', label: { es: 'Cervezas', en: 'Beers' } },
     { id: 'vinos', label: { es: 'Vinos', en: 'Wine' } },
     { id: 'chupitos', label: { es: 'Chupitos', en: 'Shots' } },
@@ -230,5 +230,6 @@ export const uiTexts = {
     en: 'All drinks include your favorite mixer'
   },
   copaHeader: { es: 'Copa', en: 'Glass' },
+  copaInfo: { es: 'Pideló en copa por 6,5€', en: 'Ask for a glass for 6,5€' },
   cachiHeader: { es: 'Cachi', en: 'Cachi' }
 };

@@ -21,14 +21,10 @@ export default function SpiritsPanel({ lang }: SpiritsPanelProps) {
           <AccordionDetails sx={{ p: 0 }}>
             {/* Cabecera de columnas para Copa y Cachi */}
             <Box sx={{ px: 2, py: 0.25, display: 'flex', justifyContent: 'flex-end', alignItems: 'center' }}>
-              <Box sx={{ display: 'flex', gap: 2, textAlign: 'right' }}>
-                {/* Copa/Glass price header hidden for now
-                <Box sx={{ width: '55px' }}>
-                  <Typography variant="caption" color="text.secondary" sx={{ fontWeight: 'bold' }}>
-                    {uiTexts.copaHeader[lang]}
-                  </Typography>
-                </Box>
-                */}
+              <Box sx={{ width: '150px' }}>
+                {idx !== 0 && idx !== 5 && <Typography variant="caption" color="text.secondary" sx={{ fontWeight: 'bold' }}>{uiTexts.copaInfo[lang]}</Typography>}
+              </Box>
+              <Box sx={{ display: 'flex', flexGrow: 1, textAlign: 'right', justifyContent: 'flex-end' }}>
                 <Box sx={{ width: '55px' }}>
                   <Typography variant="caption" sx={{ fontWeight: 'bold', color: 'secondary.main' }}>
                     {uiTexts.cachiHeader[lang]}
