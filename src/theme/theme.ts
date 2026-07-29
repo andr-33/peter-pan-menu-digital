@@ -1,16 +1,15 @@
 import { createTheme } from '@mui/material';
 
-// Configuración del Tema de Material UI (Modo oscuro, acentos verdes de Peter Pan)
 export const theme = createTheme({
   palette: {
     mode: 'dark',
     primary: {
-      main: '#4caf50', // Verde clásico
+      main: '#4caf50',
       light: '#81c784',
       dark: '#388e3c',
     },
     secondary: {
-      main: '#ffb300', // Dorado Campanilla (Tinkerbell dust)
+      main: '#ffb300',
     },
     background: {
       default: '#121212', // Fondo oscuro moderno

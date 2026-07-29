@@ -12,6 +12,7 @@ export interface ClassicItem {
   id: string;
   name: MultilingualString;
   description: MultilingualString;
+  mix: MultilingualString;
   priceCopa?: string;
   priceCachi: string;
   image?: string;
@@ -57,56 +58,64 @@ export const menuData: MenuData = {
     {
       id: 'c1',
       name: { es: 'Peter Pan', en: 'Peter Pan' },
-      description: { es: 'Licor de manzana y melocotón, Vodka, Granadina y Kas limón', en: 'Apple and peach liqueur, Vodka, Grenadine and lemon soda' },
+      description: { es: 'Imposible que falle', en: 'Impossible to fail' },
+      mix: { es: 'Licor de manzana y melocotón, Vodka, Granadina y Kas limón', en: 'Apple and peach liqueur, Vodka, Grenadine and lemon soda' },
       priceCachi: '7,5',
       image: '/cachis/peter-pan.jpg'
     },
     {
       id: 'c2',
       name: { es: 'Mágico', en: 'Magic' },
-      description: { es: 'Vino, Wisky, Licor de melocotón, Vermut blanco y rojo, azúcar y Kas naranja', en: 'Wine, Whisky, Peach liqueur, white and red Vermouth, sugar and orange soda' },
+      description: { es: 'Para una noche mágica', en: 'For a magical night' },
+      mix: { es: 'Vino, Wisky, Licor de melocotón, Vermut blanco y rojo, azúcar y Kas naranja', en: 'Wine, Whisky, Peach liqueur, white and red Vermouth, sugar and orange soda' },
       priceCachi: '7,5',
       image: '/cachis/magico.jpg'
     },
     {
       id: 'c3',
       name: { es: 'Real Racing', en: 'Real Racing' },
-      description: { es: 'Licor de manzana, Ginebra, Kiwi y 7Up', en: 'Apple liqueur, Gin, Kiwi and 7Up' },
+      description: { es: 'Este también sube', en: 'This also goes up' },
+      mix: { es: 'Licor de manzana, Ginebra, Kiwi y 7Up', en: 'Apple liqueur, Gin, Kiwi and 7Up' },
       priceCachi: '7,5',
       image: '/cachis/real-racing.jpg'
     },
     {
       id: 'c4',
       name: { es: 'Sexo en la playa', en: 'Sex on the beach' },
-      description: { es: 'Licor de melocotón, Malibu y zumo de piña', en: 'Peach liqueur, Malibu and pineapple juice' },
+      description: { es: 'Lo mejor para verano', en: 'The best for summer' },
+      mix: { es: 'Licor de melocotón, Malibu y zumo de piña', en: 'Peach liqueur, Malibu and pineapple juice' },
       priceCachi: '7,5',
       image: '/cachis/sexo.jpg'
     },
     {
       id: 'c5',
       name: { es: 'Sexo en el Peter', en: 'Sex on the Peter' },
-      description: { es: 'Vodka, Malibu y zumo de piña', en: 'Vodka, Malibu and pineapple juice' },
+      description: { es: 'Como en la playa, pero más atrevido', en: 'Like on the beach, but more daring' },
+      mix: { es: 'Vodka, Malibu y zumo de piña', en: 'Vodka, Malibu and pineapple juice' },
       priceCachi: '7,5',
       image: '/cachis/sexo.jpg'
     },
     {
       id: 'c6',
       name: { es: 'Orgasmo de limon', en: 'Orgasm lemon' },
-      description: { es: 'Licor de manzana, Tropical Blue y Kas limón', en: 'Apple liqueur, Tropical Blue and lemon soda' },
+      description: { es: 'Uno no es suficiente', en: 'One is not enough' },
+      mix: { es: 'Licor de manzana, Tropical Blue y Kas limón', en: 'Apple liqueur, Tropical Blue and lemon soda' },
       priceCachi: '7,5',
       image: '/cachis/orgasmo-limon.jpg'
     },
     {
       id: 'c7',
       name: { es: 'Orgasmo de naranja', en: 'Orgasm orange' },
-      description: { es: 'Licor de melocotón, Tropical Blue y Kas naranja', en: 'Peach liqueur, Tropical Blue and orange soda' },
+      description: { es: 'Uno no es suficiente', en: 'One is not enough' },
+      mix: { es: 'Licor de melocotón, Tropical Blue y Kas naranja', en: 'Peach liqueur, Tropical Blue and orange soda' },
       priceCachi: '7,5',
       image: '/cachis/orgasmo-naranja.jpg'
     },
     {
       id: 'c8',
       name: { es: 'Mojito Clásico', en: 'Mojito Classic' },
-      description: { es: 'Rodajas de limon, hierbabuena, Ron blanco, azúcar y 7Up.', en: 'Lime slices, mint, white rum, sugar and 7Up.' },
+      description: { es: 'El caribe en tu mano', en: 'The Caribbean in your hand' },
+      mix: { es: 'Rodajas de limon, hierbabuena, Ron blanco, azúcar y 7Up.', en: 'Lime slices, mint, white rum, sugar and 7Up.' },
       priceCopa: '7,5',
       priceCachi: '9,5'
     }
