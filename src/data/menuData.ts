@@ -65,7 +65,8 @@ export const menuData: MenuData = {
       id: 'c2',
       name: { es: 'Mágico', en: 'Magic' },
       description: { es: 'Vino, Wisky, Licor de melocotón, Vermut blanco y rojo, azúcar y Kas naranja', en: 'Wine, Whisky, Peach liqueur, white and red Vermouth, sugar and orange soda' },
-      priceCachi: '7,5'
+      priceCachi: '7,5',
+      image: '/cachis/magico.jpg'
     },
     {
       id: 'c3',
@@ -78,25 +79,29 @@ export const menuData: MenuData = {
       id: 'c4',
       name: { es: 'Sexo en la playa', en: 'Sex on the beach' },
       description: { es: 'Licor de melocotón, Malibu y zumo de piña', en: 'Peach liqueur, Malibu and pineapple juice' },
-      priceCachi: '7,5'
+      priceCachi: '7,5',
+      image: '/cachis/sexo.jpg'
     },
     {
       id: 'c5',
       name: { es: 'Sexo en el Peter', en: 'Sex on the Peter' },
       description: { es: 'Vodka, Malibu y zumo de piña', en: 'Vodka, Malibu and pineapple juice' },
-      priceCachi: '7,5'
+      priceCachi: '7,5',
+      image: '/cachis/sexo.jpg'
     },
     {
       id: 'c6',
       name: { es: 'Orgasmo de limon', en: 'Orgasm lemon' },
       description: { es: 'Licor de manzana, Tropical Blue y Kas limón', en: 'Apple liqueur, Tropical Blue and lemon soda' },
-      priceCachi: '7,5'
+      priceCachi: '7,5',
+      image: '/cachis/orgasmo-limon.jpg'
     },
     {
       id: 'c7',
       name: { es: 'Orgasmo de naranja', en: 'Orgasm orange' },
       description: { es: 'Licor de melocotón, Tropical Blue y Kas naranja', en: 'Peach liqueur, Tropical Blue and orange soda' },
-      priceCachi: '7,5'
+      priceCachi: '7,5',
+      image: '/cachis/orgasmo-naranja.jpg'
     },
     {
       id: 'c8',
