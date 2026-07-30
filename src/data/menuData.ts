@@ -108,7 +108,8 @@ export const menuData: MenuData = {
       name: { es: 'Mojito Clásico', en: 'Mojito Classic' },
       description: { es: 'Rodajas de limon, hierbabuena, Ron blanco, azúcar y 7Up.', en: 'Lime slices, mint, white rum, sugar and 7Up.' },
       priceCopa: '7,5',
-      priceCachi: '9,5'
+      priceCachi: '9,5',
+      image: '/cachis/mojito.webp'
     }
   ],
   copas: [
