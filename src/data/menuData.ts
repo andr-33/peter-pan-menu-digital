@@ -248,5 +248,27 @@ export const uiTexts = {
   },
   copaHeader: { es: 'Copa', en: 'Glass' },
   copaInfo: { es: 'Pideló en copa por 6,5€', en: 'Ask for a glass for 6,5€' },
-  cachiHeader: { es: 'Cachi', en: 'Cachi' }
+  cachiHeader: { es: 'Cachi', en: 'Cachi' },
+  footer: {
+    addressTitle: { es: 'Ubicación y Dirección', en: 'Location & Address' },
+    addressText: {
+      es: 'Calle Sol, 14, 39003 Santander, Cantabria',
+      en: 'Calle Sol, 14, 39003 Santander, Cantabria'
+    },
+    scheduleTitle: { es: 'Horario de Apertura', en: 'Opening Hours' },
+    scheduleDetails: [
+      {
+        days: { es: 'Lunes a Jueves', en: 'Monday to Thursday' },
+        hours: '19:00 - 02:30'
+      },
+      {
+        days: { es: 'Viernes y Sábado', en: 'Friday & Saturday' },
+        hours: '19:00 - 03:30'
+      },
+      {
+        days: { es: 'Domingo', en: 'Sunday' },
+        hours: '19:00 - 02:30'
+      }
+    ]
+  }
 };
