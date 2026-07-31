@@ -59,7 +59,7 @@ export const menuData: MenuData = {
       name: { es: 'Peter Pan', en: 'Peter Pan' },
       description: { es: 'Licor de manzana y melocotón, Vodka, Granadina y Kas limón', en: 'Apple and peach liqueur, Vodka, Grenadine and lemon soda' },
       priceCachi: '7,5',
-      image: '/cachis/peter-pan.jpg'
+      image: '/cachis/peter-pan.webp'
     },
     {
       id: 'c2',
@@ -188,12 +188,12 @@ export const menuData: MenuData = {
     }
   ],
   cervezas: [
-    { name: { es: 'Tercio Mahou', en: 'Mahou Bottle' }, price: '2,7' },
-    { name: { es: 'Tercio Estrella Galicia', en: 'Estrella Galicia Bottle' }, price: '2,7' },
-    { name: { es: 'Tercio Alhambra', en: 'Alhambra Bottle' }, price: '3' },
-    { name: { es: 'Tercio Voll Damm', en: 'Voll Damm Bottle' }, price: '3' },
-    { name: { es: 'Tercio Radler', en: 'Radler Bottle' }, price: '3' },
-    { name: { es: 'Tercio 0,0 Tostada', en: '0,0 Tostada Bottle' }, price: '3' },
+    { name: { es: 'Mahou', en: 'Mahou' }, price: '2,7' },
+    { name: { es: 'Estrella Galicia', en: 'Estrella Galicia' }, price: '2,7' },
+    { name: { es: 'Alhambra', en: 'Alhambra' }, price: '3' },
+    { name: { es: 'Voll Damm', en: 'Voll Damm' }, price: '3' },
+    { name: { es: 'Radler', en: 'Radler' }, price: '3' },
+    { name: { es: '0,0 Tostada', en: '0,0 Tostada' }, price: '3' },
     { name: { es: 'Caña (0,5L)', en: 'Half-pint (0.5L)' }, price: '3,5' },
   ],
   chupitos: [
