@@ -221,7 +221,7 @@ export const menuData: MenuData = {
     { name: { es: 'Copa Rueda', en: 'White Wine' }, price: '1,8' },
   ],
   refrescos: [
-    { name: { es: 'Agua sin gas', en: 'Still water' }, price: '1,5' },
+    { name: { es: 'Agua sin gas', en: 'Still water' }, price: '1,7' },
     { name: { es: 'Agua con gas', en: 'Sparkling water' }, price: '2,7' },
     { name: { es: 'Coca-Cola', en: 'Coke' }, price: '2,7' },
     { name: { es: 'Coca-Cola Zero', en: 'Coke Zero' }, price: '2,7' },
