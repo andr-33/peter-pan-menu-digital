@@ -24,7 +24,7 @@ export default function Footer({ lang }: FooterProps) {
     >
       <Container maxWidth="sm" disableGutters>
         <Box sx={{ display: 'flex', flexDirection: 'column', gap: 2.5 }}>
-          
+
           {/* DIRECCIÓN / DIRECTION */}
           <Box sx={{ display: 'flex', alignItems: 'flex-start', gap: 1.5 }}>
             <Box

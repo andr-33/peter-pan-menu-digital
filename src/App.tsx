@@ -30,17 +30,13 @@ export default function PeterPanBarMenu() {
     setTabValue(newValue);
   };
 
-  const toggleLanguage = () => {
-    setLang((prev) => (prev === 'es' ? 'en' : 'es'));
-  };
-
   return (
     <ThemeProvider theme={theme}>
       <CssBaseline />
       <Box sx={{ flexGrow: 1, height: '100vh', overflow: 'hidden', display: 'flex', flexDirection: 'column' }}>
 
         {/* HEADER */}
-        <Header lang={lang} onToggleLanguage={toggleLanguage} />
+        <Header lang={lang} onSelectLanguage={setLang} />
 
         {/* NAVEGACIÓN (TABS) */}
         <Box sx={{ borderBottom: 1, borderColor: 'divider', bgcolor: 'background.paper' }}>
@@ -115,10 +111,10 @@ export default function PeterPanBarMenu() {
               </CustomTabPanel>
 
             </Container>
-
-            {/* SMART FOOTER */}
-            <Footer lang={lang} />
           </Box>
+
+          {/* SMART FOOTER */}
+          <Footer lang={lang} />
         </Box>
       </Box>
     </ThemeProvider>

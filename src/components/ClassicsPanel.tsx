@@ -12,11 +12,8 @@ export default function ClassicsPanel({ lang }: ClassicsPanelProps) {
       {menuData.clasicos.map((item) => (
         <Card key={item.id} sx={{ mb: 2, background: 'linear-gradient(145deg, #1e1e1e 0%, #161616 100%)', border: '1px solid #2e2e2e' }}>
           <CardContent sx={{ display: 'flex', flexDirection: 'column' }}>
-            <Typography variant="h6" color="primary.light" sx={{ mb: 1 }}>
+            <Typography variant="h6" color="primary.light" sx={{ mb: 2 }}>
               {item.name[lang]}
-            </Typography>
-            <Typography variant="body2" color="text.secondary" sx={{ mt: 0.5, mb: 1, minHeight: '40px' }}>
-              {item.description[lang]}
             </Typography>
             <Box sx={{ display: 'flex', flexGrow: 1, flexDirection: 'row', alignItems: 'end', justifyContent: 'end' }}>
               {item.image && (
@@ -26,8 +23,8 @@ export default function ClassicsPanel({ lang }: ClassicsPanelProps) {
                     src={item.image}
                     alt={item.name[lang]}
                     sx={{
-                      width: '100px',
-                      height: '110px',
+                      width: '120px',
+                      height: '120px',
                       objectFit: 'cover',
                       borderRadius: '8px',
                       border: '1px solid rgba(255, 255, 255, 0.08)'
