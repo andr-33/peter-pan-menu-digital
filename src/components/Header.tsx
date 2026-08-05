@@ -40,7 +40,7 @@ export default function Header({ lang, onToggleLanguage }: HeaderProps) {
           onClick={onToggleLanguage}
           sx={{ minWidth: '45px', borderRadius: '20px' }}
         >
-          {lang === 'es' ? <IconFlagEN /> : <IconFlagES />}
+          {lang === 'en' ? <IconFlagEN /> : <IconFlagES />}
         </Button>
       </Toolbar>
     </AppBar>
