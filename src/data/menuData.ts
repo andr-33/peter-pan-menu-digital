@@ -224,7 +224,7 @@ export const menuData: MenuData = {
     { name: { es: 'Agua sin gas', en: 'Still water' }, price: '1,8' },
     { name: { es: 'Agua con gas', en: 'Sparkling water' }, price: '2,7' },
     { name: { es: 'Coca-Cola', en: 'Coke' }, price: '2,7' },
-    { name: { es: 'Coca-Cola Zero', en: 'Coke Zero' }, price: '2,7' }
+    { name: { es: 'Coca-Cola Zero', en: 'Coke Zero' }, price: '2,7' },
     { name: { es: 'Kas Naranja', en: 'Kas Orange' }, price: '2,7' },
     { name: { es: 'Kas Limón', en: 'Kas Lemon' }, price: '2,7' },
     { name: { es: 'Tónica', en: 'Tonic' }, price: '2,7' },
