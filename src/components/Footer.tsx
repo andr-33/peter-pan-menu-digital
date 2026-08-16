@@ -18,6 +18,7 @@ export default function Footer({ lang }: FooterProps) {
         borderTop: '1px solid rgba(255, 255, 255, 0.08)',
         pt: 3,
         pb: 4,
+        mb: 4,
         px: 2,
         color: 'text.secondary'
       }}
