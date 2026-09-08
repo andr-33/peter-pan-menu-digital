@@ -259,7 +259,11 @@ export const uiTexts = {
     scheduleTitle: { es: 'Horario', en: 'Schedule' },
     scheduleDetails: [
       {
-        days: { es: 'Todos los días', en: 'All days' },
+        days: { es: 'Jueves', en: 'Thursday' },
+        hours: '20:00 - 02:00'
+      },
+      {
+        days: { es: 'Viernes y Sábado', en: 'Friday & Saturday' },
         hours: '20:00 - 03:00'
       }
     ]
