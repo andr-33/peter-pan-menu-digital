@@ -265,6 +265,10 @@ export const uiTexts = {
       {
         days: { es: 'Viernes y Sábado', en: 'Friday & Saturday' },
         hours: '20:00 - 03:00'
+      }, 
+      {
+        days: { es: 'Vísperas de fiesta', en: 'Holiday eves' },
+        hours: '20:00 - 03:00'
       }
     ]
   }
